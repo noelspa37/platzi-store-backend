@@ -10,7 +10,9 @@ git:
 script:
   - yarn test
 notifications:
-  slack: home-deh8842:7dBif1XuXDV2iFu9lkEdo4pQ
+  slack:
+    secure:
+    "PMuMChJ+87iLgXmKY/qzF+IdV/d0hGWanmNDKWRVHQHAQhC+b2ILgvDiMxChfpplWSfr19Mwmi/n0Wi0i/DT1wJ0yg4MQqGDgD3qReiatcbZvE4JeUkMpcjsVjjQbXt2Z+eaV+vzhGSJ/A7V0rIjTz7UMMDPIMaViR1EGRY0aVA9Q60yBx+Nr3SlcpTTrK2uuVj+DRrab87NnhdGaK8ZrXTsDscUG3uYkKUCkOd4AM94RAN1OMg0ORtYtgCC7tRR5ejUw2jy/pNng+dIQZQrPaAoasLeUjws0UpmVV8jSoFvfrkES6QIDOicA7HuFPm14N8r/klsV2AJAaFXLrE63FlcNIcslr0AO7tx6aJghp21cSlZVFb5r8uuZIaydtP1xgNZSnzhX+r6v1THz/kN7zh5oI4zVrtHz4SJ/Bz6J8HyQDB/F3OTWUqyJi4oEY2C8pjWp2mE/2HJj+OxPH86hxwl6sqHoiBpiPq88rOdlFMtwhMIGEijInYnkofBDQxIHoIIODXXdUCKOBejOy9eh3Hs9QGmh97+hBeI58WdNC0zklzLBZSBAQYNl9gkVqoVjxyBxSwoR5Wt5Thh0W2QFaB/RzoeJ4Op8+KGinZ0uG3r2vdBwmDRV4KFFaxV8VlvCVoVaj5OfxdpWgI37pQVg2Dkq+mDV+E2Fk95JvamLrY="
   email:
     recipients:
       - noel.platzi.spa.37@gmail.com
@@ -20,7 +22,9 @@ deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 624fb509-e7ec-4064-8660-345863d4e1cb
+  api_key:
+    secure:
+    "2MY6A6N+VY4C9bJESO5JOUFRjb0fDtPZgxYaybP5WpbQIjlQyPxznWPXZ2OW6+3azkWk0+CkFErfPojgk73qe600NoVs0y8UZzGnHYgw9VxyqvIfuoxFdF2fd0rLY/IMJNXadW2rhc1rNU6XR4Vt4uTT1gLmc7fsk0PqFpoaFqiCKENNJ8qIYEzoPUD95SrY+a5pvWAFhLng+W6/omyuwObRY1zqZ0uxnhF2JJCReYQBvbmLzFjos/zSSFpLO7daRvA9pUPk3BL1B+CDbn5fmDsJut/HN4rSwoUlxhix6vBVtBCM4HatV1UZdRaAF92QrQiNATKbW3m2z7QCr+lqGA6Z0IEE0uHmvXUrfcWZQEiIeoZTU0gljJGSl723Dl6sVqFcxEWne2yH71Y9jgMnIY9MBk1u9cOz4n0v+GnqphHitK23OzlhyYic5LF16ZZ8S0+Y7QE9QL6RwPfODRiq3adp7tsibFgsc5V5CQmqPRHmuGU2oLRMGmFpP2IIezNctJWhs1NQOL8snjZsGr5+og9NWXaGtL7wRTyrhmizmR+kNcRi6/i5wvRyTuU+9iCJAKdE8PF5vPYZtE+95KNW4YIVAYn9NhjU/kTQ5VI3zA63D9b5Kc+CZY1R4EidZIN7rfaOiuFRuoJrGL273Iw3vz1kjdom77Ej+UM4D3kMSeQ="
   app: heroku-platzi-store-backend
   on:
     repo: noelspa37/platzi-store-backend

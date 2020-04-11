@@ -28,3 +28,4 @@ deploy:
   app: heroku-platzi-store-backend
   on:
     repo: noelspa37/platzi-store-backend
+# en esta version se implemento la seguridad

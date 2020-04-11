@@ -1,0 +1,26 @@
+language: node_js
+cache:
+  directories
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
+git:
+  depth: 3
+script:
+  - yarn test
+notifications:
+  slack: home-deh8842:7dBif1XuXDV2iFu9lkEdo4pQ
+  email:
+    recipients:
+      - noel.platzi.spa.37@gmail.com
+  on_success: always
+  on_failure: always
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 624fb509-e7ec-4064-8660-345863d4e1cb
+  app: heroku-platzi-store-backend
+  on:
+    repo: noelspa37/platzi-store-backend
